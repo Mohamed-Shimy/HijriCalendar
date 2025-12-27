@@ -23,6 +23,8 @@ public struct HijriDate {
     public var monthSymbol: String { calendar.monthSymbols[month - 1] }
     public var shortMonthSymbol: String { calendar.shortMonthSymbols[month - 1] }
     public var dayIndex: Int { calendar.weekDayIndex(from: self) }
+    public var isFriday: Bool { dayIndex == 6 }
+    public var isEmpty: Bool { false }
     
     // MARK: - init
     

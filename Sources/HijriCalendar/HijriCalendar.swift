@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct HijriCalendar {
+public struct HijriCalendar: Sendable {
     
     // MARK: - Properties
     

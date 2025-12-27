@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct HijriMonth {
+public struct HijriMonth: Sendable {
     
     // MARK: - Properties
     
@@ -117,18 +117,18 @@ extension HijriMonth: Collection, RandomAccessCollection {
 
 extension HijriMonth {
     
-    static var current: HijriMonth { HijriMonth() }
-    
-    static let muharram = HijriMonth(month: 1)
-    static let safar = HijriMonth(month: 2)
-    static let rabiʻI = HijriMonth(month: 3)
-    static let rabiʻII = HijriMonth(month: 4)
-    static let jumadaI = HijriMonth(month: 5)
-    static let jumadaII = HijriMonth(month: 6)
-    static let rajab = HijriMonth(month: 7)
-    static let shaʻban = HijriMonth(month: 8)
-    static let ramadan = HijriMonth(month: 9)
-    static let shawwal = HijriMonth(month: 10)
-    static let dhuʻlQiʻdah = HijriMonth(month: 11)
-    static let dhuʻlHijjah = HijriMonth(month: 12)
+    public static var current: HijriMonth { HijriMonth() }
+
+    public static let muharram = HijriMonth(month: 1)
+    public static let safar = HijriMonth(month: 2)
+    public static let rabiʻI = HijriMonth(month: 3)
+    public static let rabiʻII = HijriMonth(month: 4)
+    public static let jumadaI = HijriMonth(month: 5)
+    public static let jumadaII = HijriMonth(month: 6)
+    public static let rajab = HijriMonth(month: 7)
+    public static let shaʻban = HijriMonth(month: 8)
+    public static let ramadan = HijriMonth(month: 9)
+    public static let shawwal = HijriMonth(month: 10)
+    public static let dhuʻlQiʻdah = HijriMonth(month: 11)
+    public static let dhuʻlHijjah = HijriMonth(month: 12)
 }
